@@ -1,0 +1,9 @@
+<h1>Newsstand</h1>
+<h2>Welcome, <%= @user.username %></h2>
+<h2>What would you like to read about today?</h2>
+<ul>
+  <% @categories.each do |category| %>
+    <li><a href="/categories/<%= category.id %>"> <%= category.name %></a></li>
+  <% end %>
+</ul>
+<a href="/logout">Logout</a></h3>
